@@ -19,5 +19,18 @@ abstract String move();
 abstract String breath();
 abstract String reproduce();
 
-    
+    int getYear()
+   {
+       return yearNamed;
+   } 
+   String getName()
+   {
+       return name;
+   }
+
+   @Override
+   public String toString()
+    {
+        return "Animal{" + "id=" + id + "name=" + name + "yearNamed=" + yearNamed + "}";
+    }
 }
